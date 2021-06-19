@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Anish Khatri website</title>
+	<link href="website.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="container">
+		<header>
+			<div id="logo">
+				<a href="index.html"><img src="images/anishlogo.jpg" alt="Anish Face Image" /></a>
+			</div>
+			<h1>Anish Khatri<br>
+			Web Developer</h1>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li id="selected"><a href="#">About Myself</a>
+						<ul>
+							<li><a href="about.html">About Me</a></li>
+							<li><a href="vision.html">My Vision</a></li>
+							<li><a href="hobby.html">My Hobby</a></li>
+					    </ul>
+					<li><a href="achivements.html">My Achivements</a></li>
+					<li><a href="#">Gallery</a>
+						<ul>
+							<li><a href="videos.html">Video</a></li>
+							<li><a href="images.html">Images</a></li>
+						</ul>
+					<li><a href="workshops.html">My Workshops</a></li>
+					<li><a href="contact.html">Contact Me</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div id="contentbox">
+			<p class="pagelinks"><a href="index.html">Home</a>>Gallary</a>><a href="hobby.html">My Hobby</a>
+            <h2>My Hobby</h2>
+            <section style="width: 420px; height: 450px;">
+				<script>
+	var i = 0; // Start point
+	var images = [];
+	var time = 1500;
+
+	// Image List
+	images[0] = 'images/hobby1.jpg';
+	images[1] = 'images/hobby2.jpg';
+	images[2] = 'images/hobby3.jpg';
+	images[3] = 'images/hobby4.jpg';
+	images[2] = 'images/hobby5.jpg';
+
+	// Change Image
+	function changeImg(){
+		document.slide.src = images[i];
+
+		if(i < images.length - 1){
+			i++;
+		} else {
+			i = 0;
+		}
+
+		setTimeout("changeImg()", time);
+	}
+
+	window.onload = changeImg;
+
+</script>
+
+<img name="slide" width="410" height="380">
+<p>Me playing cricking shots at victoria oval-Adelaide,SA,5000</p><br>
+<a href="images.html">More photo gallary</a>
+			</section>
+			<section style="width:480px; height:450px;">
+				<h3 style="color:red">Description</h3>
+				<p>I am very found of cricket as i have always passion to become a cricketer and wanted to play for my nation. I have played undr-19 from my nation Nepal. But due to lack of future and other financial support and parents support. I cant continue my passion .</p>
+				<p>I am still pursing my intrest as i play multicultural games of cricket that is organized by SACA- South Australian Cricket association between teams from different countries. </p>
+				<br>
+				<br>
+				<h5>My other Hobbies</h5>
+				<p>In addition, i love cycling with my friends and making vlogs different places that i visit. I have procided the sites liked by me on cyclng and vlogs. click over image for more info.</p>
+				<a href="https://www.cyclingnews.com"><img src="images/hobbyside1.jpg" alt="anish hobby image" />
+				<a href="https://teneightymagazine.com/2020/05/21/10-lifestyle-vloggers-you-need-to-check-out/"></a><img src="images/hobbyside2.jpg" />
+			</section>
+			  </div>
+			</body>
+<footer>
+            <p class="pagelinks"> Copyright 2021.All rights reserved.Anish khatri    <a href="https://www.facebook.com/khatri.anish.1"><img src="images/facebook.jpg"></a>   <a href="https://www.instagram.com/dhawulagiricricket/"><img src="images/instagram.jpg"></a>  <a href="https://www.linkedin.com/in/anish-khatri-3962a0214/"><img src="images/linklden.jpg"></a>   <a href="https://www.youtube.com/channel/UC_suisCw0daxpK5NN2gJnfw"><img src="images/youtube.jpg"></a>     <a href="mailto:khatrianish395@gmail.com"><img src="images/gmail.jpg"></a></p>
+        </footer>
+    </div>
+</body>
+</html>
+	

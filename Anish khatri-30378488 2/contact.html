@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Anish Khatri website</title>
+	<link href="website.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="container">
+		<header>
+			<div id="logo">
+				<a href="index.html"><img src="images/anishlogo.jpg" alt="Anish Face Image" /></a>
+			</div>
+			<h1>Anish Khatri<br>
+			Web Developer</h1>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li id="selected"><a href="#">About Myself</a>
+						<ul>
+							<li><a href="about.html">About Me</a></li>
+							<li><a href="vision.html">My Vision</a></li>
+							<li><a href="hobby.html">My Hobby</a></li>
+					    </ul>
+					<li><a href="achivements.html">My Achivements</a></li>
+					<li><a href="#">Gallery</a>
+						<ul>
+							<li><a href="videos.html">Video</a></li>
+							<li><a href="images.html">Images</a></li>
+						</ul>
+					<li><a href="workshops.html">My Workshops</a></li>
+					<li><a href="contact.html">Contact Me</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div id="contentbox">
+			<p class="pagelinks"><a href="index.html">Home</a>><a href="contact.html">Contact Me</a>
+             <h2>Contact Me</h2>   
+<head>
+<script>
+	function validateForm() {
+		var validname = document.forms["myForm"]["name"].value;
+		var validemail = document.forms["myForm"]["email"].value;
+		var validmessage = document.forms["myForm"]["feedback"].value;
+		if (validname == null || validname == "") {
+			document.getElementById('jsname').innerHTML = '* Full name';
+			alert("Name must be filled out");
+			return false;
+		}
+		if (validemail == null || validemail == "") {
+			document.getElementById('jsemail').innerHTML = '* Email';
+			alert("Email must be filled out");
+			return false;
+		}
+		if (validmessage == null || validmessage == "") {
+			document.getElementById('jsmessage').innerHTML = '* Message';
+			alert("Enter a message");
+			return false;
+		}
+	}
+</script>
+</head>
+<body>
+    <form name="myForm" onsubmit="return validateForm()" method="post">
+        <h1>Contact Form</h1>
+        <label>
+			<p id="jsname">Full name</p>
+			<input type="text" class="input_text" name="name" id="name" />
+        </label>
+        <label>
+			<p id="jsemail">Email</p>
+			<input type="email" class="input_text" name="email" id="email" />
+        </label>
+		<label>
+			<p id="jsmessage">Message</p>
+			<textarea class="message" name="feedback" id="feedback"></textarea>
+		</label>
+		<label>
+			<input type="submit" class="button" value="Submit" />
+        </label>
+    </div>
+</body>
+</html>
+    <footer>
+			<p class="pagelinks">Copyright 2021.All rights reserved.Anish khatri <a href="https://www.facebook.com/khatri.anish.1"><img src="images/facebook.jpg"></a>   <a href="https://www.instagram.com/dhawulagiricricket/"><img src="images/instagram.jpg"></a>  <a href="https://www.linkedin.com/in/anish-khatri-3962a0214/"><img src="images/linklden.jpg"></a>   <a href="https://www.youtube.com/channel/UC_suisCw0daxpK5NN2gJnfw"><img src="images/youtube.jpg"></a>     <a href="mailto:khatrianish395@gmail.com"><img src="images/gmail.jpg"></a></p>
+
+		</footer>
+</body>
+</html>
+
+   
